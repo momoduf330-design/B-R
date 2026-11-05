@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0, 0.16);
+    padding: 15px 15px 11px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0 0 8px 0 grey;
+}
+
+nav p a {
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: black;
+    padding: 8px 16px;
+}
+
+nav p a:hover {
+    background-color: gainsboro;
+}
+
+nav p a span {
+    font-weight: 900;
+}
+
+nav ul{ 
+    float: right;
+    margin-right: 20px;
+    margin-top: -21px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: black;
+    padding: 8px 16px;
+}
+
+nav ul li a:hover{
+    background-color: gainsboro;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner p {
+    position: absolute;
+    left: 40%;
+    bottom: 40%;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.banner p span{
+    background-color: rgba(0, 0, 0, 0.753);
+    padding: 8px 12px;
+}
+
+.project {
+    padding: 50px 3%;
+}
+
+.project h1 {
+    font-weight: 200;
+}
+
+.project .line {
+    width: 100%;
+    height: .1px;
+    background-color: rgba(0, 0, 0, 0.158);
+    margin: 20px 0 25px;
+}
+
+.project .pro .pros {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.project .pro .pros .summer{
+    position: relative;
+}
+
+.project .pro .pros .summer p{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 7px 15px;
+}
+
+.project .pro .pros .summer img{
+    width: 310px;
+}
+
+.about {
+    padding: 50px 3%;
+}
+
+.about h1 {
+    font-weight: 200;
+}
+
+.about .line {
+    width: 100%;
+    height: .1px;
+    background-color: rgba(0, 0, 0, 0.158);
+    margin: 20px 0 25px;
+}
+
+.about .cities {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.about .cities .city {
+    width: 300px;
+}
+
+.about .cities .city img {
+    width: 100%;
+}
+
+.about .cities .city .text .mid {
+    color: rgba(0, 0, 0, 0.521);
+    padding: 15px 0;
+}
+
+.about .cities .city .text button {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: gainsboro;
+}
+
+.contact {
+    padding: 50px 3%;
+}
+
+.contact h1 {
+    font-weight: 200;
+}
+
+.contact .line {
+    width: 100%;
+    height: .1px;
+    background-color: rgba(0, 0, 0, 0.158);
+    margin: 20px 0 25px;
+}
+
+.contact form {
+    padding-top: 20px;
+}
+
+.contact form input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    text-indent: 7px;
+    font-size: 15px;
+}
+
+.contact form button {
+    padding: 10px 15px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.map {
+    padding: 0 3%;
+}
+
+footer {
+    padding: 60px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+footer p a {
+    color: white;
+}
+
+footer p a:hover {
+    color: green;
+}
+
+@media screen  and (max-width:1024px){
+    .banner .left {
+        right: 33%;
+    }    
+}
+
+@media screen  and (max-width:768px){
+    .banner .p {
+        left:29%;
+    }
+
+    .project .pro .pros {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .project .pro .pros .house{
+            flex-grow: 1;
+        }
+
+        .project .pro .pros .summer img{
+            width: 350px;
+        }
+    }
+    
+}
+
+/*@media screen  and (max-width:425px){
+    .banner .left {
+        right: 33%;
+    }*/
+    
+
+
+
+
+
